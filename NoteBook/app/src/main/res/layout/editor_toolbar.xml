@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="?attr/actionBarItemBackground">
+
+    <com.android.notebook.views.EditorHorizontalToolbar
+        android:id="@+id/rte_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionBarItemBackground"
+        android:orientation="horizontal">
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_bold"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarBold" />
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_italic"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarItalic" />
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_underline"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarUnderline" />
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_align_left"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarAlignLeft" />
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_align_center"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarAlignCenter" />
+
+        <com.android.notebook.views.EditorToolbarImageButton
+            android:id="@+id/toolbar_align_right"
+            style="?attr/rte_ToolbarButton"
+            android:background="?attr/rte_icToolbarAlignRight" />
+
+        <Spinner
+            android:id="@+id/toolbar_font"
+            style="?attr/rte_ToolbarSpinner"
+            android:background="?attr/rte_icToolbarFont" />
+
+        <Spinner
+            android:id="@+id/toolbar_fontsize"
+            style="?attr/rte_ToolbarSpinner"
+            android:background="?attr/rte_icToolbarFontSize" />
+
+        <Spinner
+            android:id="@+id/toolbar_fontcolor"
+            style="?attr/rte_ToolbarSpinner"
+            android:background="?attr/rte_icToolbarFontColor" />
+
+        <Spinner
+            android:id="@+id/toolbar_bgcolor"
+            style="?attr/rte_ToolbarSpinner"
+            android:background="?attr/rte_icToolbarBGColor" />
+
+    </com.android.notebook.views.EditorHorizontalToolbar>
+
+</HorizontalScrollView>

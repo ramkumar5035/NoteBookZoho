@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.notebook.notes.AddNoteActivity">
+
+    <include
+        android:id="@+id/rte_toolbar_container"
+        layout="@layout/editor_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rte_toolbar_container"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.notebook.views.EditorView
+                    android:id="@+id/title_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/title"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:inputType="textMultiLine|textAutoCorrect|textCapSentences" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.notebook.views.EditorView
+                    android:id="@+id/content_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/description"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                    android:minLines="3" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/done"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"
+                android:text="@string/done" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="?attr/rte_icToolbarFontSize">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawable="?attr/rte_icToolbarFontSize"
+        android:gravity="center"
+        android:scaleType="center"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="?attr/rte_ToolbarSpinnerItem"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="4dip"
+        android:paddingRight="0dip"
+        android:textIsSelectable="false"/>
+
+</FrameLayout>
